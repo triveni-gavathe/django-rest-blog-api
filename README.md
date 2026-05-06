@@ -1,8 +1,11 @@
 # 🚀 DRF Blog Platform
+🚀 DRF Blog Platform
+<p align="center"> <img src="https://img.shields.io/badge/Django-DRF-green?style=for-the-badge&logo=django" /> <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python" /> <img src="https://img.shields.io/badge/REST-API-orange?style=for-the-badge" /> <img src="https://img.shields.io/badge/Authentication-JWT-red?style=for-the-badge" /> <img src="https://img.shields.io/badge/Database-SQLite-lightgrey?style=for-the-badge&logo=sqlite" /> </p>
 
-A production-ready REST API built using Django REST Framework.
-This project demonstrates authentication, role-based permissions, caching, filtering, and scalable API design.
+✨ Project Overview
 
+A production-ready Blog REST API built using Django REST Framework (DRF).
+It includes authentication, role-based access control, filtering, pagination, caching, and a clean multi-app architecture.
 ---
 
 ## 🔥 Features
