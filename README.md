@@ -84,7 +84,7 @@ api_project/
 ## 📸 API Screenshots
 
 ### 🔐 JWT Login
-![Login] (JWTllokenloogin.png)
+![Login] (./images/JWTokenloogin.png)
  
 ### 🔄 Token Refresh
 ![Refresh](./images/refreshtoken.png)
