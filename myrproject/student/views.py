@@ -3,9 +3,10 @@ from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from student.models import Stundent
-from api.Serializer import StudentSerializer
+from student.models import Student
 
+
+from student.serializer import StudentSerializer
 # Create your views here.
 
 def students(request):
@@ -26,13 +27,13 @@ def studentView(request):
     # #covert into the list 
     # student_lst=list(students.values())
     if request.method=='GET':
-        students=Stundent.objects.all()
+        students=Student.objects.all()
         serializer=StudentSerializer(students,many=True)
         return Response(serializer.data,status=status.HTTP_200_OK)
 
     elif request.method=='POST':
         print("request body :",request.data)
-        serializer=StudentSerializer(data=request.data)
+        serializer=StudentSerializer(data=request.data,many=True)
         #get the data
         print("before serilizer:",serializer)
         
@@ -46,8 +47,8 @@ def studentView(request):
 # GEtting the data frm the id using the primary key
 def studentdetailview(request,pk):
     try:
-        studet_q=Stundent.objects.get(pk=pk)
-    except Stundent.DoesNotExist:
+        studet_q=Student.objects.get(pk=pk)
+    except Student.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)  
     if request.method=='GET':
         serializer=StudentSerializer(studet_q)  
