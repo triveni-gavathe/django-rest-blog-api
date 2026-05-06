@@ -81,11 +81,30 @@ api_project/
 * **Reader** → read-only access
 
 ---
+## 📸 API Screenshots
 
+### 🔐 JWT Login
+![Login] (JWTllokenloogin.png)
+ 
+### 🔄 Token Refresh
+![Refresh](refreshtoken.png)
+
+
+### 📝 Create Blog
+![Create Blog](./images/blogcreate.png)
+
+### 📄 Blog List
+![Blog list](./images/Bloglist.png)
+
+### 🔍 Search / Filter
+![Search] (images\filter.png)
+
+### 💬 Comments API
+![Comments](./images/commentget.png)
 ## ⚙️ Setup Instructions
 
 ```bash
-git clone https://github.com/your-username/drf-blog-platform.git
+git clone https://github.com/triveni-gavathe/django-rest-blog-api.git
 cd drf-blog-platform
 
 python -m venv env
