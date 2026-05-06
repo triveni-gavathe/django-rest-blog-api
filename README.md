@@ -87,7 +87,7 @@ api_project/
 ![Login] (JWTllokenloogin.png)
  
 ### 🔄 Token Refresh
-![Refresh](refreshtoken.png)
+![Refresh](./images/refreshtoken.png)
 
 
 ### 📝 Create Blog
@@ -129,3 +129,4 @@ python manage.py runserver
 ## 👨‍💻 Author
 
 Triveni Ravindra Gavathe
+cd
